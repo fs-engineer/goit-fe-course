@@ -1,0 +1,7 @@
+.navigation__item {
+  padding-bottom: 15px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 54px;
+}

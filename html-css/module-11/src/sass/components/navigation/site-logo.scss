@@ -1,0 +1,11 @@
+.site-logo {
+  font-size: 30px;
+  font-weight: $bold-text;
+  line-height: 1.2;
+  text-align: left;
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

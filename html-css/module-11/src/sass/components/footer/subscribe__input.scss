@@ -1,0 +1,30 @@
+.subscribe__input {
+  all: unset;
+  border: 1px solid $color-footer-input-border;
+  font-size: 15px;
+  font-family: $second-font;
+  color: $color-main-dark;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: left;
+  width: 230px;
+  height: 40px;
+  padding-left: 14px;
+
+  &::placeholder {
+    font-size: 15px;
+    font-family: $second-font;
+    color: $color-input-placeholder;
+    font-style: italic;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  &:valid {
+    border: 1px solid $color-valid;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid $color-invalid;
+  }
+}

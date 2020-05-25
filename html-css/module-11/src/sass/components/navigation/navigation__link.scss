@@ -1,0 +1,28 @@
+.navigation__link {
+  position: relative;
+  font-size: 14px;
+  font-weight: $regular-text;
+  line-height: 1.2;
+  transition: color 0.2s linear;
+  @extend %uppercase-center;
+
+  &::after {
+    @extend %pseudo;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: $color-yellow-accent;
+    transition: all 0.2s linear;
+  }
+}
+
+.navigation__item:hover .navigation__link {
+  color: $color-yellow-accent;
+}
+
+.navigation__item:hover .navigation__link::after {
+  margin-top: 10px;
+  width: 100%;
+}

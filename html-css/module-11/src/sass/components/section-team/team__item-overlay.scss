@@ -1,0 +1,22 @@
+.team__item-overley {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba($color-first-gradient, 0.9),
+    rgba($color-second-gradient, 0.9)
+  );
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.team__item-wrapper:hover .team__item-overley {
+  visibility: visible;
+  opacity: 1;
+}

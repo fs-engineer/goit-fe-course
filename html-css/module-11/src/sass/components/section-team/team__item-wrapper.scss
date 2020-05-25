@@ -1,0 +1,10 @@
+.team__item-wrapper {
+  position: relative;
+  transition: all 0.2s linear;
+  margin-bottom: 30px;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 #95e1d3;
+  }
+}

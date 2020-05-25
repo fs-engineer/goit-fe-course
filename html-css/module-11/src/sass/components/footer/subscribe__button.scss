@@ -1,0 +1,16 @@
+.subscribe__button {
+  all: unset;
+  display: block;
+  background-color: $color-subscribe-btn;
+  border: 1px solid $color-subscribe-btn;
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  color: $color-main-white;
+  font-weight: $bold-text;
+  line-height: 1.2;
+  cursor: pointer;
+  //   @extend %uppercase-center;
+  text-transform: uppercase;
+  text-align: center;
+}

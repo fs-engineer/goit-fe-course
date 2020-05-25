@@ -1,0 +1,9 @@
+.social__icon {
+  width: 26px;
+  height: 26px;
+  fill: $color-underline;
+  transition: fill 0.2s linear;
+}
+.social__link:hover .social__icon {
+  fill: $color-main-white;
+}

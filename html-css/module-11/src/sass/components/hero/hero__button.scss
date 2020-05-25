@@ -1,0 +1,19 @@
+.hero__button {
+  display: block;
+  font-size: 14px;
+  font-weight: $bold-text;
+  @extend %uppercase-center;
+  line-height: 35px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $color-main-white;
+  background-color: rgba(0, 0, 0, 0);
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

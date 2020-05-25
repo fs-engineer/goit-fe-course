@@ -1,0 +1,14 @@
+.service__item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: calc(100% / 3 - (40px * 2 / 3));
+
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 40px;
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 98px;
+  }
+}

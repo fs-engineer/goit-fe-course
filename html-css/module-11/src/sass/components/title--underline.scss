@@ -1,0 +1,7 @@
+.title--underline::after {
+  @extend %pseudo;
+  background-color: $color-underline;
+  width: 60px;
+  height: 3px;
+  margin: 40px auto 64px;
+}

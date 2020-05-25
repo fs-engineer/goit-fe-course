@@ -1,0 +1,59 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import './normalize.scss';
+@import './typogtaphy.scss';
+@import './vars.scss';
+@import './base.scss';
+@import './helpers/placeholders.scss';
+
+@import './components/container.scss';
+@import './components/masthead.scss';
+@import './components/link.scss';
+@import './components/list.scss';
+@import './components/title.scss';
+@import './components/title-text.scss';
+@import './components/subtitle-text.scss';
+@import './components/title--underline.scss';
+
+@import './components/navigation/site-navigation.scss';
+@import './components/navigation/site-logo.scss';
+@import './components/navigation/navigation__list.scss';
+@import './components/navigation/navigation__item.scss';
+@import './components/navigation/navigation__link.scss';
+@import './components/navigation/navigation__wrapper.scss';
+@import './components/navigation/navigation__btn.scss';
+@import './components/navigation/navigation__btn-icon.scss';
+
+@import './components/hero/hero__title.scss';
+@import './components/hero/hero__button.scss';
+
+@import './components/service-section/service-section.scss';
+@import './components/service-section/service__title.scss';
+@import './components/service-section/service__list.scss';
+@import './components/service-section/service__item.scss';
+@import './components/service-section/service__item-icon-wrapper.scss';
+@import './components/service-section/service__item-img.scss';
+@import './components/service-section/service__item-title.scss';
+
+@import './components/section-team/section-team.scss';
+@import './components/section-team/section__subtitle.scss';
+@import './components/section-team/team__list.scss';
+@import './components/section-team/team__item.scss';
+@import './components/section-team/social__list.scss';
+@import './components/section-team/social__item.scss';
+@import './components/section-team/social__link.scss';
+@import './components/section-team/social__icon.scss';
+@import './components/section-team/team__item-wrapper.scss';
+@import './components/section-team/team__item-overlay.scss';
+@import './components/section-team/team__item-title.scss';
+@import './components/section-team/team__item-subtitle.scss';
+
+@import './components/footer/footer.scss';
+@import './components/footer/footer__container.scss';
+@import './components/footer/footer__copyright.scss';
+@import './components/footer/footer__link.scss';
+@import './components/footer/subscribe__form.scss';
+@import './components/footer/subscribe__input.scss';
+@import './components/footer/subscribe__button.scss';

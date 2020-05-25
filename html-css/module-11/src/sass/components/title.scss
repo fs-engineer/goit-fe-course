@@ -1,0 +1,17 @@
+.title {
+  font-family: $main-font;
+  font-weight: $bold-text;
+  @extend %uppercase-center;
+  letter-spacing: 0em;
+
+  &--decore {
+    display: block;
+    font-family: $accent-title-font;
+    text-transform: capitalize;
+  }
+
+  &--size {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+}

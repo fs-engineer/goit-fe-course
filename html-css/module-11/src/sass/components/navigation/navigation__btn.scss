@@ -1,0 +1,11 @@
+.navigation__btn {
+  all: unset;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 54px;
+  }
+}
