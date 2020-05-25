@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation container">
+        <a href="#" class="navigation__logo">Golden</a>
+        <ul class="navigation__menu-list">
+          <li class="navigation__menu-list-item">
+            <a href="#" class="navigation__maenu-list-item-link">home</a>
+          </li>
+          <li class="navigation__menu-list-item">
+            <a href="#" class="navigation__maenu-list-item-link">services</a>
+          </li>
+          <li class="navigation__menu-list-item">
+            <a href="#" class="navigation__maenu-list-item-link">portpholio</a>
+          </li>
+          <li class="navigation__menu-list-item">
+            <a href="#" class="navigation__maenu-list-item-link">about</a>
+          </li>
+          <li class="navigation__menu-list-item">
+            <a href="#" class="navigation__maenu-list-item-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="services">
+      <h2 class="services__title big-title">Services</h2>
+      <p class="services__subtitle big-subtitle">
+        Proin iaculis purus consequat sem cure.
+      </p>
+      <ul class="services__list container">
+        <li class="services__list-item services__list-item_basket">
+          <h2 class="services__list-item-title">E-Commerce</h2>
+          <p class="services__list-item-subtitle">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+        <li class="services__list-item">
+          <h2 class="services__list-item-title services__list-item_laptop">
+            Responsive Web
+          </h2>
+          <p class="services__list-item-subtitle">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+        <li class="services__list-item services__list-item_locked">
+          <h2 class="services__list-item-title">Web Security</h2>
+          <p class="services__list-item-subtitle">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="contact">
+      <div class="contact__wrapper container">
+        <h2 class="contact__title big-title">Contact us</h2>
+        <p class="contact__subtitle big-subtitle">
+          Proin iaculis purus consequat sem cure.
+        </p>
+        <form action="#" class="contact__contact-form">
+          <div class="contact__contact-form-input-block">
+            <input
+              type="text"
+              required
+              name="name"
+              class="contact__contact-form-input"
+              placeholder="your name *"
+            />
+            <input
+              type="email"
+              required
+              name="email"
+              class="contact__contact-form-input"
+              placeholder="your email *"
+            />
+            <input
+              type="text"
+              name="subject"
+              class="contact__contact-form-input"
+              placeholder="subject"
+            />
+          </div>
+          <textarea
+            name="message"
+            required
+            id="message-area"
+            cols="30"
+            class="contact__contact-form-textarea"
+            placeholder="your message *"
+          ></textarea>
+          <button type="submit" class="contact__submit-buttom">
+            send message
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

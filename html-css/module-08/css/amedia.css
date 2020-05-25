@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+    padding: 0 14px;
+  }
+
+  .header {
+    padding: 20px 0 136px;
+    background-image: url(../img/bg/bg-768w.png);
+    /* background-color: #1a1915; */
+  }
+
+  .header__navigation-list-item-button-signup {
+    margin-bottom: 50px;
+  }
+
+  .find-section__main-title {
+    margin-bottom: 34px;
+  }
+
+  .find-section__subtitle {
+    margin-bottom: 18px;
+  }
+
+  .find-button {
+    max-width: 290px;
+  }
+
+  .partner__section {
+    padding-top: 66px;
+    padding-bottom: 58px;
+  }
+
+  .header__find-section {
+    padding-top: 36px;
+  }
+
+  .partner__list {
+    margin: 0 auto 28px;
+  }
+
+  .partner__list-item {
+    margin: 0 auto;
+  }
+
+  .partner__list-item:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 939px) {
+  .container {
+    width: 648px;
+  }
+
+  .header {
+    background-image: url(../img/bg/bg-940w.png);
+    /* background-color: #1a1915; */
+  }
+
+  .partner__list-item:not(:nth-of-type(even)) {
+    margin-right: 20px;
+  }
+
+  .partner__list-item:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 648px;
+  }
+
+  .header__navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .header {
+    padding-top: 36px;
+    padding-bottom: 214px;
+  }
+
+  .header__navigation {
+    margin-bottom: 150px;
+  }
+
+  .find-section__main-title {
+    max-width: 600px;
+    font-size: 51.97px;
+    margin: 0 auto 36px;
+  }
+
+  .find-section__subtitle {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .find-button {
+    max-width: 226px;
+    margin: 0 auto;
+  }
+
+  .partner__section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .partner__list-item {
+    justify-content: space-between;
+  }
+
+  .partner__title {
+    margin-bottom: 30px;
+  }
+
+  .partner__list {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+
+  .header {
+    background-image: url(../img/bg/bg-1440w.png);
+    /* background-color: #1a1915; */
+  }
+
+  .partner__list-item:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  .partner__section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
