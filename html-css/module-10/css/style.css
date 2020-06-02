@@ -516,16 +516,16 @@ p {
 
 .team__item-title {
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .team__item-subtitle {
   font-weight: var(--light-italic-text);
   font-style: italic;
+  text-align: center;
 }
 
 .footer {
-  border-top: 1px solid #e5e5e5;
-  padding: 12px 0;
 }
 
 .footer__copyright {
@@ -624,6 +624,7 @@ p {
 }
 
 .footer__container {
+  padding: 12px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,4 +634,5 @@ p {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  border-top: 1px solid #e5e5e5;
 }
