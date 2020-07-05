@@ -1,2 +1,2 @@
 # goit-fe-course
-./logo.png
+![Banner](./logo.png)
