@@ -2,11 +2,11 @@
 
 ![Banner](./logo.png)
 
-#JavaScript HomeWork
+# JavaScript HomeWork
 
 -[module 01](https://google-barma.github.io/goit-fe-course/javaScript/module-01/)
 
-#HTML/CSS HomeWork
+# HTML/CSS HomeWork
 
 -[module 01](https://google-barma.github.io/goit-fe-course/html-css/module-1-2/)
 
