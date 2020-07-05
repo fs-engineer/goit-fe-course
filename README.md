@@ -1,12 +1,16 @@
 # goit-fe-course
 
 ![Banner](./logo.png)
+<br>
+<br>
+<br>
+<br>
 
 # JavaScript HomeWork
 
 - [x] [module 01](https://google-barma.github.io/goit-fe-course/javaScript/module-01/)
 
-- [ ][module 02] в процессе...
+- [ ] [module 02] в процессе...
 
 # HTML/CSS HomeWork
 
