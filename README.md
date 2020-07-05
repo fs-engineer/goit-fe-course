@@ -35,3 +35,5 @@
 - [x] [module 10](https://google-barma.github.io/goit-fe-course/html-css/module-10/)
 
 - [x] [module 11](https://google-barma.github.io/goit-fe-course/html-css/module-11/build/)
+
+- [x] [extended module 11](https://google-barma.github.io/mogo/build/)
