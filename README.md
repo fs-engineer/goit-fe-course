@@ -4,7 +4,7 @@
 
 #HTML/CSS HomeWork
 
--[module 01](https://google-barma.github.io/goit-fe-course/html-css/module-01/)
+-[module 01](https://google-barma.github.io/goit-fe-course/html-css/module-1-2/)
 
 -[module 02](https://google-barma.github.io/goit-fe-course/html-css/module-02/)
 
@@ -22,6 +22,6 @@
 
 -[module 09](https://google-barma.github.io/goit-fe-course/html-css/module-09/)
 
--[module 10](https://google-barma.github.io/goit-fe-course/html-css/module-10/build)
+-[module 10](https://google-barma.github.io/goit-fe-course/html-css/module-10/)
 
 -[module 11](https://google-barma.github.io/goit-fe-course/html-css/module-11/build/)
