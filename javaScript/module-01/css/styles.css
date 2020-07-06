@@ -28,3 +28,7 @@ code {
 .task__section:not(:last-child) {
   margin-bottom: 30px;
 }
+
+.red {
+  color: #fa8072;
+}
