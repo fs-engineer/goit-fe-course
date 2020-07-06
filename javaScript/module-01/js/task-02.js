@@ -9,10 +9,11 @@ formRef.addEventListener('click', () => {
   console.log(total);
   const ordered = Number(orderGoodsRef.value);
 
+  const balance = total - ordered;
   const message =
     ordered > total
       ? 'На складе не достаточно товаров, укажите меньшее кол-во!'
-      : `Заказ оформлен, с вами свяжеться менеджер. Вы заказали ${ordered} товаров`;
+      : `Заказ оформлен, с вами свяжеться менеджер. Вы заказали ${ordered} товаров. На складе осталось ${balance} товаров.`;
 
   alert(message);
 });
