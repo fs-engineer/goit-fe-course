@@ -22,7 +22,7 @@ buttonRef.addEventListener('click', () => {
 
     message =
       totalPrice <= credits
-        ? `Вы преобрели ${numberOfDroids}, у вас на счету осталось ${result} кредитов.`
+        ? `Вы преобрели ${numberOfDroids}шт. за ${totalPrice} кредитов. У Вас на счету осталось ${result} кредитов.`
         : 'У Вас достаточно кредитов на счету!';
   } else {
     message = 'Нужно ввести число больше нуля!';
