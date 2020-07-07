@@ -27,5 +27,4 @@ buttonRef.addEventListener('click', () => {
   } else {
     alert('Нужно ввести число больше нуля!');
   }
-  alert(message);
 });
