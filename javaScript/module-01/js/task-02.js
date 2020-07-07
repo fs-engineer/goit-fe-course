@@ -6,14 +6,10 @@ const orderGoodsRef = document.querySelector('#ordered__goods');
 formRef.addEventListener('click', () => {
   event.preventDefault();
   const total = Number(avaibleGoodsRef.value);
-  console.log(total);
   const ordered = Number(orderGoodsRef.value);
 
-  const balance = total - ordered;
-  const message =
-    ordered > total
-      ? 'На складе не достаточно товаров, укажите меньшее кол-во!'
-      : `Заказ оформлен, с вами свяжеться менеджер. Вы заказали ${ordered} товаров. На складе осталось ${balance} товаров.`;
-
-  alert(message);
+  if (ordered > total) {
+    alert('На складе не достаточно товаров, укажите меньшее кол-во!')
+  }else{`Заказ оформлен, с вами свяжеться менеджер. Вы заказали ${ordered} товаров. На складе осталось ${total - ordered товаров.`;}
+    
 });
