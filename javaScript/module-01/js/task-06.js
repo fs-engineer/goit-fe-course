@@ -14,8 +14,8 @@ buttonRef.addEventListener('click', () => {
     }
 
     input = Number(input);
-    const inputNan = Number.isNaN(input);
-    if (inputNan === true) {
+    const checkInputIsNan = isNaN(input);
+    if (checkInputIsNan === true) {
       alert('Вы ввели не число, попробуйте еще раз');
     } else {
       total += input;
