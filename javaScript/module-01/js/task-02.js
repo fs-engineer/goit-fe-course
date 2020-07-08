@@ -18,3 +18,12 @@ formRef.addEventListener('click', () => {
     );
   }
 });
+
+// const total = 100;
+// const ordered = 60;
+
+// if (ordered > total) {
+//   console.log('На складе не достаточно товаров');
+// } else {
+//   console.log(`Заказ оформлен на сумму ${ordered}, с Вами свяжется менеджер`);
+// }
