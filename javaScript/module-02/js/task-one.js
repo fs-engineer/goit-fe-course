@@ -2,7 +2,7 @@
 
 const logItems = function (array) {
   for (let i = 0; i < array.length; i += 1) {
-    console.log(`Номер в списке: ${i + 1} item: ${array[i]}`);
+    console.log(`Номер элемента: [${i + 1}] значение: [${array[i]}]`);
   }
 };
 
