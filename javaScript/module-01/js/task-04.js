@@ -28,3 +28,25 @@ buttonRef.addEventListener('click', () => {
     alert('Нужно ввести число больше нуля!');
   }
 });
+
+//КОД ПО УСЛОВИЮ
+
+// const credits = 23580;
+// const pricePerDroid = 3000;
+// let totalPrice;
+// const userInput = prompt('Введите кол-во дроидов');
+// totalPrice = userInput * pricePerDroid;
+
+// if (userInput === null) {
+//   alert('Отменено пользователем');
+// } else {
+//   if (totalPrice > credits) {
+//     alert('Не достаточно средств на счету');
+//   } else {
+//     alert(
+//       `Вы преобрели ${userInput} дроидов, на сумму${
+//         userInput * pricePerDroid
+//       } кредитов`,
+//     );
+//   }
+// }
