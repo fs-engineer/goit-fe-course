@@ -1,35 +1,11 @@
-"use srtict";
+"use strict";
 
 const logItems = function (array) {
-  //   console.log(array);
-  //   for (i = 0; i< array.)
-  const args = Array.from(arguments);
-  //   console.log(args);
-  for (arg of args) {
-    numberingOfArray = [];
+  for (let i = 0; i < array.length; i += 1) {
+    console.log(`Номер в списке: ${i + 1} item: ${array[i]}`);
   }
-  return numberingOfArray;
 };
 
-const numberingOfNames = logItems([
-  "Mango",
-  "Poly",
-  "Ajax",
-  "Lux",
-  "Jay",
-  "Kong",
-]);
+logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
 
-const numberingOfNumbers = logItems([
-  "Mango",
-  "Poly",
-  "Ajax",
-  "Lux",
-  "Jay",
-  "Kong",
-]);
-console.log(numberingOfNames);
-console.log(numberingOfArray);
-
-// const numberingOfNumbers = logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
-// console.log(numberingOfNumbers);
+logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
