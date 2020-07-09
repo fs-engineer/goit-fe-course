@@ -1,17 +1,29 @@
 "use strict";
 
-const print = function (str) {
-  console.log(str);
+const formatString = function (string) {
+  const stringLegnth = string.length;
+  let newString;
+
+  if (stringLegnth > 40) {
+    const stringArray = string.split("");
+    stringArray.length = 40;
+    stringArray.push("...");
+    newString = stringArray.join("");
+  }
+  if (stringLegnth < 40) {
+    newString = string;
+  }
+  return newString;
 };
 
-const string = "Donec orci lectus aliquam est magnis";
-const collectionSring = string.split(" ");
-console.log(collectionSring);
+console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 
-const emptyArray = [];
+console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
 
-for (let i = 0; i < collectionSring.length; i += 1) {
-  emptyArray.push(collectionSring[i]);
-}
-print(emptyArray);
-console.log(emptyArray);
+console.log(formatString("Curabitur ligula sapien."));
+
+console.log(
+  formatString(
+    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+  )
+);
