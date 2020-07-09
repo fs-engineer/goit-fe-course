@@ -1,5 +1,7 @@
 "use strict";
 
+const buttonRef = document.querySelector(".task-four__btn");
+
 const formatString = function (string) {
   const stringLegnth = string.length;
   let newString;
@@ -16,14 +18,18 @@ const formatString = function (string) {
   return newString;
 };
 
-console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+buttonRef.addEventListener("click", () => {
+  console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 
-console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+  console.log(
+    formatString("Vestibulum facilisis, purus nec pulvinar iaculis.")
+  );
 
-console.log(formatString("Curabitur ligula sapien."));
+  console.log(formatString("Curabitur ligula sapien."));
 
-console.log(
-  formatString(
-    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
-  )
-);
+  console.log(
+    formatString(
+      "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+    )
+  );
+});

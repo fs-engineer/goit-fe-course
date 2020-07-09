@@ -8,12 +8,176 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <script src="./js/task-one.js" type="module"></script> -->
-    <!-- <script src="./js/task-two.js" type="module"></script> -->
-    <!-- <script src="./js/task-three.js" type="module"></script> -->
-    <!-- <script src="./js/task-four.js" type="module"></script> -->
-    <!-- <script src="./js/task-five.js" type="module"></script> -->
-    <!-- <script src="./js/task-six.js" type="module"></script> -->
+    <main>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 1</h2>
+          <p>
+            Напиши функцию <code>logItems(array)</code>, которая получает массив
+            и использует цикл <code>for</code>, который для каждого элемента
+            массива будет выводить в консоль сообщение в формате
+            <code>[номер элемента] - [значение элемента]</code>.
+          </p>
+          <p>
+            Нумерация должна начинаться с <code>1</code>. К примеру для первого
+            элемента массива <code>['Mango', 'Poly', 'Ajax']</code> с индексом
+            <code>0</code> будет выведено <code>'1 - Mango'</code>, а для
+            индекса <code>2</code> выведет <code>'3 - Ajax'</code>.
+          </p>
+          <button class="task-one__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 2</h2>
+          <p>
+            Напиши скрипт подсчета стоимости гравировки украшений. Для этого
+            создай функцию
+            <code>calculateEngravingPrice(message, pricePerWord)</code>
+            принимающую строку (в строке будут только слова и пробелы) и цену
+            гравировки одного слова, и возвращающую цену гравировки всех слов в
+            строке.
+          </p>
+          <button class="task-two__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 3</h2>
+          <p>
+            Напиши фукцнию <code>findLongestWord(string)</code>, которая
+            принимает параметром произвольную строку (в строке будут только
+            слова и пробелы) и возвращает самое длинное слово в этой строке.
+          </p>
+          <button class="task-three__btn btn">Запустить скрипт</button>
+          <p>
+            <span class="red">Не по ТЗ.</span> Второй скрипт находит самое
+            большое слово и если таких слов несколько, выводит их все
+          </p>
+          <button class="task-three-one__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 4</h2>
+          <p>
+            Напиши фукцнию <code>findLongestWord(string)</code>, которая
+            принимает параметром произвольную строку (в строке будут только
+            слова и пробелы) и возвращает самое длинное слово в этой строке.
+          </p>
+          <button class="task-four__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 5</h2>
+          <p>
+            Напиши фукцнию <code>findLongestWord(string)</code>, которая
+            принимает параметром произвольную строку (в строке будут только
+            слова и пробелы) и возвращает самое длинное слово в этой строке.
+          </p>
+          <button class="task-five__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 6</h2>
+          <p>Напиши скрипт со следующим функционалом:</p>
+          <ul>
+            <li>
+              При загрузке страницы пользователю предлагается в
+              <code>prompt</code> ввести число. Ввод сохраняется в переменную
+              <code>input</code> и добавляется в массив чисел
+              <code>numbers</code>.
+            </li>
+            <li>
+              Операция ввода числа пользователем и сохранение в массив
+              продолжается до тех пор, пока пользователь не нажмет
+              <code>Cancel</code> в <code>prompt</code>.
+            </li>
+            <li>
+              После того как пользователь прекратил ввод нажав
+              <code>Cancel</code>, если массив не пустой, необходимо посчитать
+              сумму всех элементов массива и записать ее в переменную
+              <code>total</code>. Используй цикл <code>for</code> или
+              <code>for...of</code>. После чего в консоль выведи строку
+              <code>'Общая сумма чисел равна [сумма]'</code>.
+            </li>
+          </ul>
+          <button class="task-six__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 7</h2>
+          <p>
+            Есть массив <code>logins</code> с логинами пользователей. Напиши
+            скрипт добавления логина в массив <code>logins</code>. Добавляемый
+            логин должен:
+          </p>
+          <ul>
+            <li>
+              проходить проверку на длину от 4 до 16-ти символов включительно
+            </li>
+            <li>
+              быть уникален, то есть отсутствовать в массиве <code>logins</code>
+            </li>
+          </ul>
+          <p>Разбей задачу на подзадачи с помощью функций.</p>
+          <p>
+            Напиши функцию <code>isLoginValid(login)</code>, в которой проверь
+            количество символов параметра <code>login</code> и верни
+            <code>true</code> или <code>false</code> в зависимости от того,
+            попадает ли длина параметра в заданный диапазон от 4-х до 16-ти
+            символов включительно.
+          </p>
+          <p>
+            Напиши функцию <code>isLoginUnique(allLogins, login)</code>, которая
+            принимает список всех логинов и добавляемый логин как параметры и
+            проверяет наличие <code>login</code> в массиве
+            <code>allLogins</code>, возвращая <code>true</code> если такого
+            логина еще нет и <code>false</code> если логин уже используется.
+          </p>
+          <p>Напиши функцию <code>addLogin(allLogins, login)</code> которая:</p>
+          <ul>
+            <li>Принимает новый логин и массив всех логинов как параметры</li>
+            <li>
+              Проверяет валидность логина используя вспомогательную функцию
+              <code>isLoginValid</code>
+            </li>
+            <li>
+              Если логин не валиден, прекратить исполнение функции
+              <code>addLogin</code> и вернуть строку
+              <code>'Ошибка! Логин должен быть от 4 до 16 символов'</code>
+            </li>
+            <li>
+              Если логин валиден, функция <code>addLogin</code> проверяеть
+              уникальность логина с помощью функции <code>isLoginUnique</code>
+            </li>
+            <li>
+              Если <code>isLoginUnique</code> вернет <code>false</code>, тогда
+              <code>addLogin</code> не добавляет логин в массив и возвращает
+              строку <code>'Такой логин уже используется!'</code>
+            </li>
+            <li>
+              Если <code>isLoginUnique</code> вернет <code>true</code>,
+              <code>addLogin</code> добавляет новый логин в
+              <code>logins</code> и возвращает строку
+              <code>'Логин успешно добавлен!'</code>
+            </li>
+          </ul>
+          <button class="task-seven__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/task-one.js" type="module"></script>
+    <script src="./js/task-two.js" type="module"></script>
+    <script src="./js/task-three.js" type="module"></script>
+    <script src="./js/task-three-one.js" type="module"></script>
+    <script src="./js/task-four.js" type="module"></script>
+    <script src="./js/task-five.js" type="module"></script>
+    <script src="./js/task-six.js" type="module"></script>
     <script src="./js/task-seven.js" type="module"></script>
   </body>
 </html>

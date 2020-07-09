@@ -1,5 +1,7 @@
 "use strict";
 
+const buttonRef = document.querySelector(".task-five__btn");
+
 const checkForSpam = function (message) {
   const messageUpper = message.toUpperCase();
   let spamCheck;
@@ -13,10 +15,12 @@ const checkForSpam = function (message) {
   return spamCheck;
 };
 
-console.log(checkForSpam("Latest technology news"));
+buttonRef.addEventListener("click", () => {
+  console.log(checkForSpam("Latest technology news"));
 
-console.log(checkForSpam("JavaScript weekly newsletter"));
+  console.log(checkForSpam("JavaScript weekly newsletter"));
 
-console.log(checkForSpam("Get best sale offers now!"));
+  console.log(checkForSpam("Get best sale offers now!"));
 
-console.log(checkForSpam("[SPAM] How to earn fast money?"));
+  console.log(checkForSpam("[SPAM] How to earn fast money?"));
+});
