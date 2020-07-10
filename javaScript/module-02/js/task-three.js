@@ -2,7 +2,7 @@
 
 const buttonRef = document.querySelector(".task-three__btn");
 
-const findLongestWord = function (string) {
+const findLongestWord = (string) => {
   const wordsArray = string.split(" ");
 
   let lengthWord = 0;

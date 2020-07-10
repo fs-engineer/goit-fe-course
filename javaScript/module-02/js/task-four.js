@@ -2,7 +2,7 @@
 
 const buttonRef = document.querySelector(".task-four__btn");
 
-const formatString = function (string) {
+const formatString = (string) => {
   const stringLegnth = string.length;
   let newString;
 

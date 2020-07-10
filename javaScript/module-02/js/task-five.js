@@ -2,7 +2,7 @@
 
 const buttonRef = document.querySelector(".task-five__btn");
 
-const checkForSpam = function (message) {
+const checkForSpam = (message) => {
   const messageUpper = message.toUpperCase();
   let spamCheck;
 

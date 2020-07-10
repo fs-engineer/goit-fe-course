@@ -4,7 +4,7 @@ const buttonRef = document.querySelector(".task-seven__btn");
 
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
-const isLoginValid = function (login) {
+const isLoginValid = (login) => {
   let loginLength = login.length;
 
   loginLength = loginLength < 4 || loginLength > 16 ? false : true;
@@ -12,7 +12,7 @@ const isLoginValid = function (login) {
   return loginLength;
 };
 
-const isLoginUnique = function (allLogins, login) {
+const isLoginUnique = (allLogins, login) => {
   let loginCheck;
 
   loginCheck = allLogins.includes(login) ? false : true;
@@ -20,7 +20,7 @@ const isLoginUnique = function (allLogins, login) {
   return loginCheck;
 };
 
-const addLogin = function (allLogins, login) {
+const addLogin = (allLogins, login) => {
   let message;
   if (isLoginValid(login) && isLoginUnique(allLogins, login)) {
     logins.push(login);

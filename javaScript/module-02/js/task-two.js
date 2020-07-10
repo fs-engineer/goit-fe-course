@@ -3,7 +3,7 @@
 const buttonRef = document.querySelector(".task-two__btn");
 
 buttonRef.addEventListener("click", () => {
-  const calculateEngravingPrice = function (message, pricePerWord) {
+  const calculateEngravingPrice = (message, pricePerWord) => {
     const words = message.split(" ").length;
     const totalPrice = words * pricePerWord;
     return totalPrice;
