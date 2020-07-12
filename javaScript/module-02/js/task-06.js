@@ -10,22 +10,19 @@ buttonRef.addEventListener("click", () => {
     input = prompt("Введите любое число!");
 
     if (input !== null) {
-      input = Number(input);
-      if (Number.isNaN(input)) {
+      // input = Number(input);
+      if (Number.isNaN(+input)) {
         alert("Вы ввели не число, попробуйте еще раз");
         continue;
       }
-      numbers.push(input);
-    } else {
-      if (numbers.length !== 0) {
-        for (let number of numbers) {
-          total += number;
-        }
-        alert(`Вы ввели числа на общую сумму [${total}].`);
-        break;
-      } else {
-        break;
-      }
+      numbers.push(+input);
     }
   } while (input !== null);
+
+  if (numbers.length !== 0) {
+    for (let number of numbers) {
+      total += number;
+    }
+    alert(`Вы ввели числа на общую сумму [${total}].`);
+  }
 });
