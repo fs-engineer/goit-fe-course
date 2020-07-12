@@ -3,16 +3,10 @@
 const buttonRef = document.querySelector(".task-five__btn");
 
 const checkForSpam = (message) => {
-  const messageUpper = message.toUpperCase();
-  let spamCheck;
-
-  if (messageUpper.includes("SALE") || messageUpper.includes("SPAM")) {
-    spamCheck = true;
-  } else {
-    spamCheck = false;
-  }
-
-  return spamCheck;
+  return (
+    message.toUpperCase().includes("SALE") ||
+    message.toUpperCase().includes("SPAM")
+  );
 };
 
 buttonRef.addEventListener("click", () => {
