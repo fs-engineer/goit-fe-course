@@ -3,20 +3,25 @@
 const buttonRef = document.querySelector(".task-four__btn");
 
 const formatString = (string) => {
-  const stringLegnth = string.length;
-  let newString;
+  let newString = string.length > 40 ? string.substring(0, 41) + "..." : string;
 
-  if (stringLegnth > 40) {
-    const stringArray = string.split("");
-    stringArray.length = 40;
-    stringArray.push("...");
-    newString = stringArray.join("");
-  }
-  if (stringLegnth < 40) {
-    newString = string;
-  }
   return newString;
 };
+// const formatString = (string) => {
+//   const stringLegnth = string.length;
+//   let newString;
+
+//   if (stringLegnth > 40) {
+//     const stringArray = string.split("");
+//     stringArray.length = 40;
+//     stringArray.push("...");
+//     newString = stringArray.join("");
+//   }
+//   if (stringLegnth < 40) {
+//     newString = string;
+//   }
+//   return newString;
+// };
 
 buttonRef.addEventListener("click", () => {
   console.log(formatString("Curabitur ligula sapien, tincidunt non."));
