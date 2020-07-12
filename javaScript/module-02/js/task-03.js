@@ -5,11 +5,9 @@ const buttonRef = document.querySelector(".task-three__btn");
 const findLongestWord = (string) => {
   const wordsArray = string.split(" ");
 
-  let lengthWord = 0;
-  let biggestWord;
+  let biggestWord = [0];
   for (let i = 0; i < wordsArray.length; i += 1) {
-    if (wordsArray[i].length > lengthWord) {
-      lengthWord = wordsArray[i].length;
+    if (wordsArray[i].length > biggestWord.length) {
       biggestWord = wordsArray[i];
     }
   }
