@@ -14,12 +14,12 @@ const isLoginUnique = (allLogins, login) => {
 
 const addLogin = (allLogins, login) => {
   if (isLoginValid(login)) {
-    return console.log("Ошибка! Логин должен быть от 4 до 16 символов");
+    return "Ошибка! Логин должен быть от 4 до 16 символов";
   }
   if (isLoginUnique(allLogins, login)) {
-    return console.log("Такой логин уже используется!");
+    return "Такой логин уже используется!";
   }
-  return console.log("Логин успешно добавлен!");
+  return "Логин успешно добавлен!";
 };
 
 buttonRef.addEventListener("click", () => {
