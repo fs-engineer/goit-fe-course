@@ -4,7 +4,7 @@ const buttonRef = document.querySelector(".task-one__btn");
 
 const logItems = (array) => {
   for (let i = 0; i < array.length; i += 1) {
-    console.log(`Номер элемента: [${i + 1}] значение: [${array[i]}]`);
+    console.log(`${i + 1} - ${array[i]}`);
   }
 };
 
