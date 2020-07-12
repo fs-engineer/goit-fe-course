@@ -10,7 +10,6 @@ buttonRef.addEventListener("click", () => {
     input = prompt("Введите любое число!");
 
     if (input !== null) {
-      // input = Number(input);
       if (Number.isNaN(+input)) {
         alert("Вы ввели не число, попробуйте еще раз");
         continue;
