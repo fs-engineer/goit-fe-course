@@ -5,11 +5,11 @@ const buttonRef = document.querySelector(".task-seven__btn");
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const isLoginValid = (login) => {
-  return login.length < 4 || login.length > 16 ? true : false;
+  return login.length < 4 || login.length > 16;
 };
 
 const isLoginUnique = (allLogins, login) => {
-  return allLogins.includes(login) ? true : false;
+  return allLogins.includes(login);
 };
 
 const addLogin = (allLogins, login) => {
