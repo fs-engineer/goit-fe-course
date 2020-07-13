@@ -8,10 +8,18 @@ const findLongestWord = (string) => {
   let biggestWord = [];
   for (let i = 0; i < wordsArray.length; i += 1) {
     if (wordsArray[i].length > biggestWord.length) {
+      // console.log(biggestWord);
       biggestWord = wordsArray[i];
     }
   }
-  return biggestWord;
+  let allBiggestWords = [];
+  for (let j = 0; j < wordsArray.length; j += 1) {
+    if (wordsArray[j].length === biggestWord.length) {
+      allBiggestWords.push(wordsArray[j]);
+    }
+  }
+
+  return allBiggestWords;
 };
 
 buttonRef.addEventListener("click", () => {
@@ -21,4 +29,6 @@ buttonRef.addEventListener("click", () => {
   console.log(findLongestWord("cramle Google do a roll toogle "));
 
   console.log(findLongestWord("May the force be with you"));
+
+  console.log(findLongestWord("я ты иди тада назад вперед"));
 });
