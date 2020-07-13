@@ -8,7 +8,6 @@ const findLongestWord = (string) => {
   let biggestWord = [];
   for (let i = 0; i < wordsArray.length; i += 1) {
     if (wordsArray[i].length > biggestWord.length) {
-      // console.log(biggestWord);
       biggestWord = wordsArray[i];
     }
   }
