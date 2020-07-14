@@ -4,13 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <script src="./js/task-01.js" type="module"></script> -->
-    <!-- <script src="./js/task-02.js" type="module"></script> -->
-    <!-- <script src="./js/task-03.js" type="module"></script> -->
-    <!-- <script src="./js/task-04.js" type="module"></script> -->
-    <!-- <script src="./js/task-05.js" type="module"></script> -->
+    <main>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 1</h2>
+          <p>
+            Напиши скрипт, который, для объекта <code>user</code>,
+            последовательно:
+          </p>
+          <ul>
+            <li>
+              добавляет поле <code>mood</code> со значением <code>'happy'</code>
+            </li>
+            <li>
+              заменяет значение <code>hobby</code> на <code>'skydiving'</code>
+            </li>
+            <li>
+              заменяет значение <code>premium</code> на <code>false</code>
+            </li>
+            <li>
+              выводит содержимое объекта <code>user</code> в формате
+              <code>ключ:значение</code> используя <code>Object.keys()</code> и
+              <code>for...of</code>
+            </li>
+          </ul>
+          <button class="task-one__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 2</h2>
+          <p>
+            Напиши функцию <code>countProps(obj)</code>, считающую кол-во
+            свойств в объекте. Функция возвращает число - количество свойств.
+          </p>
+          <button class="task-two__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 3</h2>
+          <p>
+            Напиши функцию <code>findBestEmployee(employees)</code>, которая
+            принимает объект сотрудников и возвращает имя самого продуктивного
+            (который выполнил больше всех задач). Сотрудники и кол-во выполненых
+            задач содержатся как свойства объекта в формате
+            <code>"имя":"кол-во задач"</code>.
+          </p>
+          <button class="task-three__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 4</h2>
+          <p>
+            Напиши функцию <code>countTotalSalary(employees)</code> принимающую
+            объект зарплат. Функция считает общую сумму запрплаты работников и
+            возращает ее. Каждое поле объекта, передаваемого в функцию, имеет
+            вид <code>"имя":"зарплата"</code>.
+          </p>
+          <button class="task-four__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 5</h2>
+          <p>
+            Напиши функцию <code>getAllPropValues(arr, prop)</code>, которая
+            получает массив объектов и имя свойства. Возвращает массив значений
+            определенного свойства <code>prop</code> из каждого объекта в
+            массиве.
+          </p>
+          <button class="task-five__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 6</h2>
+          <p>
+            Напиши функцию
+            <code>calculateTotalPrice(allProdcuts, productName)</code>, которая
+            получает массив объектов и имя продукта (значение свойства
+            <code>name</code>). Возвращает общую стоимость продукта (цена *
+            количество).
+          </p>
+          <p>Вызовы функции для проверки работоспособности твоей реализации.</p>
+          <button class="task-six__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 7</h2>
+          <p class="red">Задача еще решается...</p>
+          <p>
+            Напиши скрипт управления личным кабинетом интернет банка. Есть
+            объект <code>account</code> в котором необходимо реализовать методы
+            для работы с балансом и историей транзакций.
+          </p>
+          <!-- <button class="task-seven__btn btn">Запустить скрипт</button> -->
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/task-01.js" type="module"></script>
+    <script src="./js/task-02.js" type="module"></script>
+    <script src="./js/task-03.js" type="module"></script>
+    <script src="./js/task-04.js" type="module"></script>
+    <script src="./js/task-05.js" type="module"></script>
     <script src="./js/task-06.js" type="module"></script>
   </body>
 </html>

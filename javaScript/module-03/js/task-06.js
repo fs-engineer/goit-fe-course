@@ -1,5 +1,7 @@
 "use strict";
 
+const buttonRef = document.querySelector(".task-six__btn");
+
 const products = [
   { name: "Радар", price: 1300, quantity: 4 },
   { name: "Сканер", price: 2700, quantity: 3 },
@@ -14,7 +16,8 @@ const calculateTotalPrice = function (allProdcuts, productName) {
     }
   }
 };
+buttonRef.addEventListener("click", () => {
+  console.log(calculateTotalPrice(products, "Радар"));
 
-console.log(calculateTotalPrice(products, "Радар")); // 5200
-
-console.log(calculateTotalPrice(products, "Дроид")); // 2800
+  console.log(calculateTotalPrice(products, "Дроид"));
+});
