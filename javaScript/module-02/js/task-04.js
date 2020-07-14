@@ -3,7 +3,7 @@
 const buttonRef = document.querySelector(".task-four__btn");
 
 const formatString = (string) => {
-  return string.length > 40 ? `string.substring(0, 41) "..."` : string;
+  return string.length > 40 ? `${string.slice(0, 41)}...` : string;
 };
 
 buttonRef.addEventListener("click", () => {
