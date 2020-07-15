@@ -25,11 +25,9 @@ const account = {
    * Принимает сумму и тип транзакции.
    */
   createTransaction(amount, type) {
-    let newTransaction = {};
-    newTransaction.id = this.transactions.length + 1;
-    newTransaction.amount = amount;
-    newTransaction.type = type;
-    return newTransaction;
+    const id = this.transactions.length + 1;
+    const transObj = { id, type, amount };
+    return transObj;
   },
 
   /*
@@ -127,7 +125,9 @@ const account = {
         }
       }
     }
-    return alert(transactionBalance);
+    return alert(
+      `Вы совершили ${allTransactions.length} операций на сумму: ${transactionBalance}`
+    );
   },
 };
 
