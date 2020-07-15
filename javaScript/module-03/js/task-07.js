@@ -63,9 +63,9 @@ const account = {
     );
     if (amount > this.balance) {
       alert(
-        `На вашем счету не достаточно средств. Недостающая сумма ${
-          this.balance - amount
-        }`
+        `На вашем счету не достаточно средств. Баланс: ${
+          this.balance
+        } Для снятия не хватает ${this.balance - amount}`
       );
     } else {
       this.balance -= Number(+amount);
@@ -93,12 +93,12 @@ const account = {
       for (let prop in transaction) {
         if (prop === "id" && transaction[prop] === id) {
           for (let key in transaction) {
-            stringForReturn += `${key}: ${transaction[key]} `;
+            stringForReturn += `${key}: ${transaction[key]}, `;
           }
         }
       }
     }
-    return alert(stringForReturn);
+    return alert(`Детали транзакции: ${stringForReturn}`);
   },
 
   /*
