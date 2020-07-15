@@ -160,11 +160,3 @@ buttonTypeOfOperationRef.addEventListener("click", () => {
     prompt("Введите типа операции deposit или withdraw")
   );
 });
-
-// account.deposit(10);
-// account.deposit(10);
-// account.deposit(10);
-// account.deposit(10);
-
-// console.log(account.getBalance());
-// account.getTransactionDetails(3);
