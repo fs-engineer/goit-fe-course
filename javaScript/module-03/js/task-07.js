@@ -76,7 +76,7 @@ const account = {
    * Метод возвращает текущий баланс
    */
   getBalance() {
-    return alert(`На вашем счету: ${this.balance}`);
+    return `На вашем счету: ${this.balance}`;
     // return console.log(this.balance);
   },
 
@@ -148,7 +148,7 @@ buttonWithdrawRef.addEventListener("click", () => {
 });
 
 buttonBalanceRef.addEventListener("click", () => {
-  account.getBalance();
+  alert(account.getBalance());
 });
 
 buttonFindIdRef.addEventListener("click", () => {
