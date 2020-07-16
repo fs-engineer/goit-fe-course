@@ -55,20 +55,19 @@ const account = {
    * о том, что снятие такой суммы не возможно, недостаточно средств.
    */
   withdraw(amount) {
-    if (amount === null) {
-      return;
-    }
-    this.transactions.push(
-      this.createTransaction(amount, Transaction.WITHDRAW)
-    );
-    if (amount > this.balance) {
-      alert(
-        `На вашем счету не достаточно средств. Баланс: ${
-          this.balance
-        } Для снятия не хватает ${this.balance - amount}`
-      );
-    } else {
-      this.balance -= +amount;
+    if (amount !== null) {
+      if (amount > this.balance) {
+        alert(
+          `На вашем счету не достаточно средств. Баланс: ${
+            this.balance
+          } Для снятия не хватает ${this.balance - amount}`
+        );
+      } else {
+        this.balance -= +amount;
+        this.transactions.push(
+          this.createTransaction(amount, Transaction.WITHDRAW)
+        );
+      }
     }
   },
 
