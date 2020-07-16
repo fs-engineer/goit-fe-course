@@ -37,12 +37,12 @@ const account = {
    * после чего добавляет его в историю транзакций
    */
   deposit(amount) {
-    if (amount === null) {
-      return;
+    if (amount !== null) {
+      this.transactions.push(
+        this.createTransaction(amount, Transaction.DEPOSIT)
+      );
+      this.balance += +amount;
     }
-    this.transactions.push(this.createTransaction(amount, Transaction.DEPOSIT));
-    this.balance += Number(+amount);
-    return;
   },
 
   /*
@@ -68,7 +68,7 @@ const account = {
         } Для снятия не хватает ${this.balance - amount}`
       );
     } else {
-      this.balance -= Number(+amount);
+      this.balance -= +amount;
     }
   },
 
