@@ -3,10 +3,7 @@
 const buttonRef = document.querySelector(".task-two__btn");
 
 const countProps = function (obj) {
-  let count = 0;
-  for (const key in obj) {
-    count += 1;
-  }
+  let count = Object.keys(obj).length;
   return count;
 };
 
