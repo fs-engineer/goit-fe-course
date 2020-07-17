@@ -82,22 +82,11 @@ const account = {
   /*
    * Метод ищет и возвращает объект транзации по id
    */
+
   getTransactionDetails(id) {
-    let stringForReturn = "";
-    if (id === null) {
-      return;
-    }
-    id = Number(+id);
-    for (let transaction of this.transactions) {
-      for (let prop in transaction) {
-        if (prop === "id" && transaction[prop] === id) {
-          for (let key in transaction) {
-            stringForReturn += `${key}: ${transaction[key]}, `;
-          }
-        }
-      }
-    }
-    return alert(`Детали транзакции: ${stringForReturn}`);
+    let user = this.transactions.find((item) => item.id === +id);
+
+    return `Детали транзакции: ID: ${user.id}, тип транзакции: ${user.type}, сумма: ${user.amount}`;
   },
 
   /*
@@ -105,28 +94,18 @@ const account = {
    * определенного типа транзакции из всей истории транзакций
    */
   getTransactionTotal(type) {
-    let allTransactions = [];
-    let transactionBalance = 0;
-    if (type === null) {
-      return;
-    }
-    for (let transaction of this.transactions) {
-      for (let prop in transaction) {
-        if (transaction[prop] === type) {
-          allTransactions.push(transaction);
-        }
-      }
-    }
-    for (let key in allTransactions) {
-      for (let prop in allTransactions[key]) {
+    let oneTypes = this.transactions.filter((item) => item.type === type);
+    let sum = 0;
+
+    for (let key in oneTypes) {
+      for (let prop in oneTypes[key]) {
         if (prop === "amount") {
-          transactionBalance += Number(allTransactions[key][prop]);
+          sum += Number(oneTypes[key][prop]);
         }
       }
     }
-    return alert(
-      `Вы совершили ${allTransactions.length} операций на сумму: ${transactionBalance}`
-    );
+
+    return `Вы совершили ${oneTypes.length} операций на сумму: ${sum}`;
   },
 };
 
@@ -151,11 +130,25 @@ buttonBalanceRef.addEventListener("click", () => {
 });
 
 buttonFindIdRef.addEventListener("click", () => {
-  account.getTransactionDetails(prompt("Введите номер транзакции:"));
+  const getId = prompt("Введите номер транзакции:");
+  alert(account.getTransactionDetails(getId));
 });
 
 buttonTypeOfOperationRef.addEventListener("click", () => {
-  account.getTransactionTotal(
-    prompt("Введите типа операции deposit или withdraw")
-  );
+  const getTotal = prompt("Введите типа операции deposit или withdraw");
+  alert(account.getTransactionTotal(getTotal));
 });
+
+// console.log(account.deposit(200));
+// console.log(account.deposit(200));
+// console.log(account.deposit(200));
+// console.log(account.deposit(34));
+// console.log(account.deposit(200));
+// console.log(account.withdraw(304));
+// console.log(account.deposit(340));
+// console.log(account.deposit(304));
+// console.log(account.withdraw(304));
+
+// console.log(account.balance);
+
+// console.log(account.getTransactionTotal("withdraw"));
