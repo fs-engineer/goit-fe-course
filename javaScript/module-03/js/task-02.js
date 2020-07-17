@@ -3,8 +3,7 @@
 const buttonRef = document.querySelector(".task-two__btn");
 
 const countProps = function (obj) {
-  let count = Object.keys(obj).length;
-  return count;
+  return Object.keys(obj).length;
 };
 
 buttonRef.addEventListener("click", () => {
