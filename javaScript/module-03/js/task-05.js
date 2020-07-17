@@ -1,6 +1,6 @@
 "use strict";
 
-// const buttonRef = document.querySelector(".task-five__btn");
+const buttonRef = document.querySelector(".task-five__btn");
 
 const products = [
   { name: "Радар", price: 1300, quantity: 4 },
@@ -12,17 +12,17 @@ const products = [
 const getAllPropValues = function (arr, prop) {
   let nameOfProducts = [];
   for (const product of arr) {
-    if (product[prop]) {
+    if (product.hasOwnProperty(prop)) {
       nameOfProducts.push(product[prop]);
     }
   }
   return nameOfProducts;
 };
 
-// buttonRef.addEventListener("click", () => {
-console.log(getAllPropValues(products, "name"));
+buttonRef.addEventListener("click", () => {
+  console.log(getAllPropValues(products, "name"));
 
-console.log(getAllPropValues(products, "quantity"));
+  console.log(getAllPropValues(products, "quantity"));
 
-console.log(getAllPropValues(products, "category"));
-// });
+  console.log(getAllPropValues(products, "category"));
+});
