@@ -75,7 +75,7 @@ const account = {
    * Метод возвращает текущий баланс
    */
   getBalance() {
-    return `На вашем счету: ${this.balance}`;
+    return this.balance;
     // return console.log(this.balance);
   },
 
@@ -84,9 +84,9 @@ const account = {
    */
 
   getTransactionDetails(id) {
-    let user = this.transactions.find((item) => item.id === +id);
+    let obj = this.transactions.find((item) => item.id === +id);
 
-    return `Детали транзакции: ID: ${user.id}, тип транзакции: ${user.type}, сумма: ${user.amount}`;
+    return console.log(obj);
   },
 
   /*
