@@ -37,12 +37,8 @@ const account = {
    * после чего добавляет его в историю транзакций
    */
   deposit(amount) {
-    if (amount !== null) {
-      this.transactions.push(
-        this.createTransaction(amount, Transaction.DEPOSIT)
-      );
-      this.balance += +amount;
-    }
+    this.transactions.push(this.createTransaction(amount, Transaction.DEPOSIT));
+    this.balance += amount;
   },
 
   /*
@@ -88,18 +84,14 @@ const account = {
    * определенного типа транзакции из всей истории транзакций
    */
   getTransactionTotal(type) {
-    let oneTypes = this.transactions.filter((item) => item.type === type);
-    let sum = 0;
-
+    const oneTypes = this.transactions.filter((item) => item.type === type);
+    let total = 0;
     for (let key in oneTypes) {
-      for (let prop in oneTypes[key]) {
-        if (prop === "amount") {
-          sum += Number(oneTypes[key][prop]);
-        }
+      if (oneTypes[key].amount) {
+        total += oneTypes[key].amount;
       }
     }
-
-    return `Вы совершили ${oneTypes.length} операций на сумму: ${sum}`;
+    return total;
   },
 };
 
@@ -107,12 +99,13 @@ const buttonDepositRef = document.querySelector(".deposit__btn");
 const buttonWithdrawRef = document.querySelector(".withdraw__btn");
 const buttonBalanceRef = document.querySelector(".balance__btn");
 const buttonFindIdRef = document.querySelector(".find-id__btn");
-const buttonTypeOfOperationRef = document.querySelector(
-  ".type-of-operation__btn"
+const buttonTypeOfDepositRef = document.querySelector(".type-of-deposit__btn");
+const buttonTypeOfWithdrawRef = document.querySelector(
+  ".type-of-withdraw__btn"
 );
 
 buttonDepositRef.addEventListener("click", () => {
-  account.deposit(prompt("Введите сумму:"));
+  account.deposit(+prompt("Введите сумму:"));
 });
 
 buttonWithdrawRef.addEventListener("click", () => {
@@ -131,9 +124,16 @@ buttonFindIdRef.addEventListener("click", () => {
   );
 });
 
-buttonTypeOfOperationRef.addEventListener("click", () => {
-  const getTotal = prompt("Введите типа операции deposit или withdraw");
-  alert(account.getTransactionTotal(getTotal));
+buttonTypeOfDepositRef.addEventListener("click", () => {
+  alert(
+    `Вы совершили операций на сумму: ${account.getTransactionTotal("deposit")}`
+  );
+});
+
+buttonTypeOfWithdrawRef.addEventListener("click", () => {
+  alert(
+    `Вы совершили операций на сумму: ${account.getTransactionTotal("withdraw")}`
+  );
 });
 
 // console.log(account.deposit(200));
