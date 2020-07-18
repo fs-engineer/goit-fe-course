@@ -86,7 +86,7 @@ const account = {
   getTransactionDetails(id) {
     let obj = this.transactions.find((item) => item.id === +id);
 
-    return console.log(obj);
+    return obj;
   },
 
   /*
@@ -131,7 +131,10 @@ buttonBalanceRef.addEventListener("click", () => {
 
 buttonFindIdRef.addEventListener("click", () => {
   const getId = prompt("Введите номер транзакции:");
-  alert(account.getTransactionDetails(getId));
+  const transaction = account.getTransactionDetails(getId);
+  alert(
+    `ID: ${transaction.id}, типа транзакции: ${transaction.type}, сумма: ${transaction.amount}`
+  );
 });
 
 buttonTypeOfOperationRef.addEventListener("click", () => {
