@@ -85,13 +85,10 @@ const account = {
    */
   getTransactionTotal(type) {
     const oneTypes = this.transactions.filter((item) => item.type === type);
-    let total = 0;
-    for (let key in oneTypes) {
-      if (oneTypes[key].amount) {
-        total += oneTypes[key].amount;
-      }
-    }
-    return total;
+    const result = oneTypes.reduce((sum, current) => {
+      if (current.type === type) return sum + +current.amount;
+    }, 0);
+    return result;
   },
 };
 
@@ -109,7 +106,7 @@ buttonDepositRef.addEventListener("click", () => {
 });
 
 buttonWithdrawRef.addEventListener("click", () => {
-  account.withdraw(prompt("Введите сумму:"));
+  account.withdraw(+prompt("Введите сумму:"));
 });
 
 buttonBalanceRef.addEventListener("click", () => {
@@ -144,8 +141,10 @@ buttonTypeOfWithdrawRef.addEventListener("click", () => {
 // console.log(account.withdraw(304));
 // console.log(account.deposit(340));
 // console.log(account.deposit(304));
-// console.log(account.withdraw(304));
+// console.log(account.withdraw(30));
 
 // console.log(account.balance);
 
 // console.log(account.getTransactionTotal("withdraw"));
+
+// console.log(account.transactions);
