@@ -85,10 +85,9 @@ const account = {
    */
   getTransactionTotal(type) {
     const oneTypes = this.transactions.filter((item) => item.type === type);
-    const result = oneTypes.reduce((sum, current) => {
+    return oneTypes.reduce((sum, current) => {
       if (current.type === type) return sum + +current.amount;
     }, 0);
-    return result;
   },
 };
 
