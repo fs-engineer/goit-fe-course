@@ -21,8 +21,7 @@ const removeItem = inventory.remove;
 
 const invokeInventoryAction = function (itemName, action) {
   console.log(`Invoking action on ${itemName}`);
-  const actionFn = action.bind(inventory);
-  actionFn(itemName);
+  action.call(inventory, itemName);
 };
 
 buttonRef.addEventListener("click", () => {
