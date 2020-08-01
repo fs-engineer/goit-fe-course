@@ -1,11 +1,12 @@
 'use strict';
 
-const Account = function (account) {
-  this.account = account;
+const Account = function ({ login, email }) {
+  this.login = login;
+  this.email = email;
 };
 
 Account.prototype.getInfo = function () {
-  console.log(this.account);
+  console.log(`Login: ${this.login}, Email: ${this.email}`);
 };
 
 console.log(Account.prototype.getInfo); // function
