@@ -23,13 +23,16 @@ class StringBuilder {
 
 const builder = new StringBuilder('.');
 
-console.log(builder.value);
+const buttonRef = document.querySelector('.task-four__btn');
+buttonRef.addEventListener('click', () => {
+  console.log(builder.value);
 
-builder.append('^');
-console.log(builder.value); // '.^'
+  builder.append('^');
+  console.log(builder.value); // '.^'
 
-builder.prepend('^');
-console.log(builder.value); // '^.^'
+  builder.prepend('^');
+  console.log(builder.value); // '^.^'
 
-builder.pad('=');
-console.log(builder.value); // '=^.^='
+  builder.pad('=');
+  console.log(builder.value); // '=^.^='
+});

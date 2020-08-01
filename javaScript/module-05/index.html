@@ -8,10 +8,111 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <script src="./js/task-01.js" type="module"></script> -->
-    <!-- <script src="./js/task-02.js" type="module"></script> -->
-    <!-- <script src="./js/task-03.js" type="module"></script> -->
-    <!-- <script src="./js/task-04.js" type="module"></script> -->
+    <main>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 1</h2>
+          <p>
+            Напиши функцию-конструктор <code>Account</code>, которая создает
+            объект со свойствами <code>login</code> и <code>email</code>. В
+            <code>prototype</code> функции-конструктора добавь метод
+            <code>getInfo()</code>, который выводит в консоль значения полей
+            <code>login</code> и <code>email</code> объекта который его вызвал.
+          </p>
+          <button class="task-one__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 2</h2>
+          <p>
+            Напиши класс <code>User</code> для создания пользователя со
+            следующим свойствами:
+          </p>
+          <ul>
+            <li><code>name</code> - строка</li>
+            <li><code>age</code> - число</li>
+            <li><code>followers</code> - число</li>
+          </ul>
+          <p>
+            Добавь метод <code>getInfo()</code>, который, выводит строку:
+            <code
+              >User ${имя} is ${возраст} years old and has ${кол-во фоловеров}
+              followers</code
+            >
+          </p>
+          <button class="task-two__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 3</h2>
+          <p>
+            Напиши класс <code>Storage</code>, который будет создавать объекты
+            для управления складом товаров. При вызове будет получать один
+            аргумент - начальный массив товаров, и записывать его в свойство
+            <code>items</code>.
+          </p>
+          <p>Добавь методы класса:</p>
+          <ul>
+            <li><code>getItems()</code> - возвращает массив текущих товаров</li>
+            <li>
+              <code>addItem(item)</code> - получает новый товар и добавляет его
+              к текущим
+            </li>
+            <li>
+              <code>removeItem(item)</code> - получет товар и, если он есть,
+              удаляет его из текущих
+            </li>
+          </ul>
+          <button class="task-three__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 4</h2>
+          <p>
+            Напиши класс <code>StringBuilder</code>. На вход он получает один
+            параметр - строку, которую записывает в свойство
+            <code>_value</code>.
+          </p>
+          <p>Добавь классу следующий функционал:</p>
+          <ul>
+            <li>
+              Геттер <code>value</code> - возвращает текущее значение поля
+              <code>_value</code>
+            </li>
+            <li>
+              Метод <code>append(str)</code> - получает парметр str (строку) и
+              добавляет ее в конец <code>_value</code>
+            </li>
+            <li>
+              Метод <code>prepend(str)</code> - получает парметр str (строку) и
+              добавляет ее в начало value
+            </li>
+            <li>
+              Метод <code>pad(str)</code> - получает парметр str (строку) и
+              добавляет ее в начало и в конец <code>_value</code>
+            </li>
+          </ul>
+          <button class="task-four__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+      <section class="task__section">
+        <div class="container">
+          <h2>Задание 5</h2>
+          <p>
+            Напиши класс <code>Car</code> с указанными свойствами и методами.
+          </p>
+          <button class="task-five__btn btn">Запустить скрипт</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/task-01.js" type="module"></script>
+    <script src="./js/task-02.js" type="module"></script>
+    <script src="./js/task-03.js" type="module"></script>
+    <script src="./js/task-04.js" type="module"></script>
     <script src="./js/task-05.js" type="module"></script>
   </body>
 </html>
