@@ -10,5 +10,3 @@ const getInactiveUsers = users => {
 };
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
-
-console.table(users);

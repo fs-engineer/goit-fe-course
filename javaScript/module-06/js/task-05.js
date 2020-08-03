@@ -11,5 +11,3 @@ const getUserWithEmail = (users, email) => {
 
 console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
 console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
-
-console.table(users);
