@@ -1,6 +1,7 @@
 'use strict';
 
 import users from './users.js';
+
 const getUserNames = array => {
   let userName = [];
   users.forEach(user => {
