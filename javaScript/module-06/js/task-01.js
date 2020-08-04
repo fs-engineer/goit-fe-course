@@ -4,9 +4,7 @@ import users from './users.js';
 
 const getUserNames = array => {
   let userName = [];
-  users.forEach(user => {
-    userName.push(user.name);
-  });
+  users.forEach(user => userName.push(user.name));
   return userName;
 };
 
