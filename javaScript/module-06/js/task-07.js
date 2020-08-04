@@ -17,5 +17,3 @@ const calculateTotalBalance = users => {
 };
 
 console.log(calculateTotalBalance(users)); // 20916
-
-console.table(users);

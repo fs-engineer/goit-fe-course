@@ -18,7 +18,9 @@
 
 - [x] [module 05](https://google-barma.github.io/goit-fe-course/javaScript/module-05/)
 
-- [ ] [module 06] в процессе...
+- [x] [module 06](https://google-barma.github.io/goit-fe-course/javaScript/module-06/)
+
+- [ ] [module 07] в процессе...
 
 # HTML/CSS HomeWork
 
