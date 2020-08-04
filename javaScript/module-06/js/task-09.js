@@ -3,11 +3,16 @@
 import users from './users.js';
 
 const getNamesSortedByFriendsCount = users => {
-  const userNames = [];
+  let sortName = [];
+  users
+    .sort(
+      (minValue, maxValue) => minValue.friends.length - maxValue.friends.length,
+    )
+    .map(user => {
+      sortName.push(user.name);
+    });
 
-  users.forEach(user => {
-    user.find;
-  });
+  return sortName;
 };
 
 console.log(getNamesSortedByFriendsCount(users));
