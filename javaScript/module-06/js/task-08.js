@@ -14,5 +14,8 @@ const getUsersWithFriend = (users, friendName) => {
   return getFrandsName;
 };
 
-console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
-console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+const buttonRef = document.querySelector('.task-eigth__btn');
+buttonRef.addEventListener('click', () => {
+  console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+  console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+});

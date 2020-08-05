@@ -6,7 +6,9 @@ const getUsersWithAge = (users, min, max) => {
   return users.filter(user => user.age > min && user.age < max);
 };
 
-console.table(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
+const buttonRef = document.querySelector('.task-six__btn');
+buttonRef.addEventListener('click', () => {
+  console.table(getUsersWithAge(users, 20, 30));
 
-console.table(getUsersWithAge(users, 30, 40));
-// [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
+  console.table(getUsersWithAge(users, 30, 40));
+});

@@ -10,4 +10,8 @@ const getUsersWithGender = (users, gender) => {
   return userNames;
 };
 
-console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+const buttonRef = document.querySelector('.task-three__btn');
+
+buttonRef.addEventListener('click', () => {
+  console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+});

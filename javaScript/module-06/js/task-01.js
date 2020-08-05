@@ -8,5 +8,9 @@ const getUserNames = array => {
   return userName;
 };
 
-console.log(getUserNames(users));
-// [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
+const buttonRef = document.querySelector('.task-one__btn');
+
+buttonRef.addEventListener('click', () => {
+  console.log(getUserNames(users));
+  // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
+});
