@@ -3,9 +3,7 @@
 import users from './users.js';
 
 const getUserNames = array => {
-  let userName = [];
-  users.forEach(user => userName.push(user.name));
-  return userName;
+  return users.map(user => user.name);
 };
 
 const buttonRef = document.querySelector('.task-one__btn');
