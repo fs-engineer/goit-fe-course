@@ -2,17 +2,10 @@
 
 import users from './users.js';
 
-const getUsersWithFriend = (users, friendName) => {
-  const getFrandsName = [];
-
-  users.forEach(user => {
-    user.friends.filter(friend => {
-      if (friend === friendName) getFrandsName.push(user.name);
-    });
-  });
-
-  return getFrandsName;
-};
+const getUsersWithFriend = (users, friendName) =>
+  users
+    .filter(user => user.friends.includes(friendName))
+    .map(user => user.name);
 
 const buttonRef = document.querySelector('.task-eigth__btn');
 buttonRef.addEventListener('click', () => {

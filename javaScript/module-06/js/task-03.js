@@ -2,13 +2,8 @@
 
 import users from './users.js';
 
-const getUsersWithGender = (users, gender) => {
-  let userNames = [];
-  const usersArray = users.filter(user => {
-    if (user.gender === gender) userNames.push(user.name);
-  });
-  return userNames;
-};
+const getUsersWithGender = (users, gender) =>
+  users.filter(user => user.gender === gender).map(user => user.name);
 
 const buttonRef = document.querySelector('.task-three__btn');
 
