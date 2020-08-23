@@ -3,12 +3,16 @@
 const btnRenderRef = document.querySelector('button[data-action="render"]');
 const btnDestroyRef = document.querySelector('button[data-action="destroy"]');
 const inputNumberRef = document.querySelector('input[type="number"]');
-const boxCollection = document.querySelector('#boxes');
+const boxesColRef = document.querySelector('#boxes');
 
-const handleDivDestroy = () => boxCollection.remove('div');
+const handleDivDestroy = () => {
+  while (boxesColRef.firstChild) {
+    boxesColRef.removeChild(boxesColRef.firstChild);
+  }
+};
 
 const handleDivRender = () =>
-  boxCollection.append(...createBoxes(inputNumberRef.value));
+  boxesColRef.append(...createBoxes(inputNumberRef.value));
 
 const randomColor = () => Math.floor(Math.random() * 16777215).toString(16);
 

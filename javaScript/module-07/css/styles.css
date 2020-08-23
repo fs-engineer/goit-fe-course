@@ -41,3 +41,15 @@ img {
   color: #ffffff;
   text-shadow: 1px 1px 5px black;
 }
+
+ul {
+  max-width: 700px;
+  list-style: none;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 20px;
+}
+
+div {
+  margin: 3px;
+}
