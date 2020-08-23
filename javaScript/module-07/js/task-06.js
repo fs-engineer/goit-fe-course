@@ -2,9 +2,9 @@
 
 const inputNameRef = document.getElementById('validation-input');
 
-inputNameRef.addEventListener('input', handleInputChange);
+inputNameRef.addEventListener('blur', handleInputValidation);
 
-function handleInputChange() {
+function handleInputValidation() {
   if (inputNameRef.value.length === +inputNameRef.dataset.length) {
     inputNameRef.classList.remove('invalid');
     inputNameRef.classList.add('valid');
