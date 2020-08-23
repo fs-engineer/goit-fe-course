@@ -9,3 +9,24 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: 2px solid palevioletred;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  box-shadow: inset 0px 0px 23px 7px rgba(0, 0, 0, 0.34);
+}
+
+img {
+  border: 5px solid #ffffff;
+  margin-bottom: 5px;
+  box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.28);
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+}
