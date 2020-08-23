@@ -8,6 +8,5 @@ categoriesRef.forEach((el, index) => {
     `Категория ${index + 1}: ${el.querySelector('h2').textContent}`,
   );
   console.log(`Количество элементов: ${el.querySelectorAll('li').length}`);
-
   console.groupEnd();
 });
