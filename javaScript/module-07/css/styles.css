@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 #validation-input {
   border: 3px solid #bdbdbd;
 }
@@ -12,15 +16,20 @@
 
 section {
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   border-radius: 30px;
   border: 2px solid palevioletred;
   background-color: #85ffbd;
   background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
   box-shadow: inset 0px 0px 23px 7px rgba(0, 0, 0, 0.34);
+  max-width: 1024px;
 }
 
 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
   border: 5px solid #ffffff;
   margin-bottom: 5px;
   box-shadow: 10px 10px 17px -8px rgba(0, 0, 0, 0.28);
@@ -29,4 +38,6 @@ img {
 .title {
   text-align: center;
   font-size: 35px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px black;
 }
