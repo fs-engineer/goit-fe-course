@@ -21,7 +21,7 @@ const images = [
 const galleryRef = document.querySelector('#gallery');
 galleryRef.style.listStyle = 'none';
 
-const liArray = images.map(image => {
+const liTagArray = images.map(image => {
   const img = document.createElement('img');
   const li = document.createElement('li');
   img.src = image.url;
@@ -32,4 +32,4 @@ const liArray = images.map(image => {
   return li;
 });
 
-galleryRef.append(...liArray);
+galleryRef.append(...liTagArray);
