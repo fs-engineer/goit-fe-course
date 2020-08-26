@@ -21,14 +21,15 @@ const images = [
 const galleryRef = document.querySelector('#gallery');
 galleryRef.style.listStyle = 'none';
 
-images.forEach(image => {
+const liArray = images.map(image => {
   const img = document.createElement('img');
   const li = document.createElement('li');
-
   img.src = image.url;
   img.alt = image.alt;
   img.width = 640;
 
   li.append(img);
-  galleryRef.append(li);
+  return li;
 });
+
+galleryRef.append(...liArray);
