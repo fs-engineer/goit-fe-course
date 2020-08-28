@@ -20,20 +20,8 @@ createGallery();
 ref.closeModalBtn.addEventListener("click", onCloseModal);
 ref.imgGallery.addEventListener("click", onClickGallery);
 ref.backDrop.addEventListener("click", onClickBackDrop);
-ref.nextBtn.addEventListener("click", (event) => {
-  if (largeImageIndex < ref.imgGallery.childElementCount) {
-    ref.largeImg.src = document.querySelector(
-      `img[data-index = "${++largeImageIndex}"]`
-    ).dataset.source;
-  }
-});
-ref.prevBtn.addEventListener("click", (event) => {
-  if (largeImageIndex > 1) {
-    ref.largeImg.src = document.querySelector(
-      `img[data-index = "${(largeImageIndex -= 1)}"]`
-    ).dataset.source;
-  }
-});
+ref.nextBtn.addEventListener("click", handleNextClick);
+ref.prevBtn.addEventListener("click", handlePrevClick);
 
 function createGallery() {
   let index = 0;
@@ -133,6 +121,20 @@ function handleNextPrevKey(event) {
   ) {
     ref.largeImg.src = document.querySelector(
       `img[data-index = "${++largeImageIndex}"]`
+    ).dataset.source;
+  }
+}
+function handleNextClick() {
+  if (largeImageIndex < ref.imgGallery.childElementCount) {
+    ref.largeImg.src = document.querySelector(
+      `img[data-index = "${++largeImageIndex}"]`
+    ).dataset.source;
+  }
+}
+function handlePrevClick() {
+  if (largeImageIndex > 1) {
+    ref.largeImg.src = document.querySelector(
+      `img[data-index = "${(largeImageIndex -= 1)}"]`
     ).dataset.source;
   }
 }
