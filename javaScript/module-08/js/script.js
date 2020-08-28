@@ -110,7 +110,6 @@ function handleNextPrevKey(event) {
     ref.largeImg.src = document.querySelector(
       `img[data-index = "${(largeImageIndex -= 1)}"]`
     ).dataset.source;
-    console.log(largeImageIndex);
   }
   if (
     event.key === "ArrowRight" &&
@@ -119,6 +118,5 @@ function handleNextPrevKey(event) {
     ref.largeImg.src = document.querySelector(
       `img[data-index = "${++largeImageIndex}"]`
     ).dataset.source;
-    console.log(largeImageIndex);
   }
 }
