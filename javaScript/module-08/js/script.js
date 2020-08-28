@@ -67,6 +67,7 @@ function onOpenModal() {
   window.addEventListener("keydown", onPressEsc);
 
   largeImageIndex = event.target.dataset.index;
+
   window.addEventListener("keydown", handleNextPrevKey);
 }
 
@@ -109,13 +110,15 @@ function handleNextPrevKey(event) {
     ref.largeImg.src = document.querySelector(
       `img[data-index = "${(largeImageIndex -= 1)}"]`
     ).dataset.source;
+    console.log(largeImageIndex);
   }
   if (
     event.key === "ArrowRight" &&
     largeImageIndex < ref.imgGallery.childElementCount
   ) {
     ref.largeImg.src = document.querySelector(
-      `img[data-index = "${largeImageIndex++}"]`
+      `img[data-index = "${++largeImageIndex}"]`
     ).dataset.source;
+    console.log(largeImageIndex);
   }
 }
