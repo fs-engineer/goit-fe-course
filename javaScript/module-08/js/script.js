@@ -10,6 +10,8 @@ const ref = {
   ),
   largeImg: document.querySelector(".lightbox__image"),
   backDrop: document.querySelector(".lightbox__content"),
+  prevBtn: document.querySelector(".prev-btn"),
+  nextBtn: document.querySelector(".next-btn"),
 };
 let largeImageIndex;
 
@@ -18,6 +20,20 @@ createGallery();
 ref.closeModalBtn.addEventListener("click", onCloseModal);
 ref.imgGallery.addEventListener("click", onClickGallery);
 ref.backDrop.addEventListener("click", onClickBackDrop);
+ref.nextBtn.addEventListener("click", (event) => {
+  if (largeImageIndex < ref.imgGallery.childElementCount) {
+    ref.largeImg.src = document.querySelector(
+      `img[data-index = "${++largeImageIndex}"]`
+    ).dataset.source;
+  }
+});
+ref.prevBtn.addEventListener("click", (event) => {
+  if (largeImageIndex > 1) {
+    ref.largeImg.src = document.querySelector(
+      `img[data-index = "${(largeImageIndex -= 1)}"]`
+    ).dataset.source;
+  }
+});
 
 function createGallery() {
   let index = 0;

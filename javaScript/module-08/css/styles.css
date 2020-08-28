@@ -98,33 +98,33 @@ body {
   transition: transform 200ms ease-in-out;
 }
 
-/* .lightbox__content::before {
-  content: "";
+.prev-btn {
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   width: 30px;
   height: 30px;
   background-image: url(../images/left-arrow.svg);
   background-color: #fff;
   border-radius: 50%;
   border: 5px solid #fff;
+  cursor: pointer;
 }
 
-.lightbox__content::after {
-  content: "";
+.next-btn {
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 90%;
+  right: 5%;
   width: 30px;
   height: 30px;
   background-image: url(../images/right-arrow.svg);
   background-color: #fff;
   border-radius: 50%;
   border: 5px solid #fff;
-} */
+  cursor: pointer;
+}
 
 .lightbox__image {
   width: auto;
