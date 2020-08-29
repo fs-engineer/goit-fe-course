@@ -72,15 +72,16 @@ function onOpenModal() {
 
   largeImageIndex = event.target.dataset.index;
 
-  window.addEventListener("keydown", handleNextPrevKey);
+  window.addEventListener("keydown", handleNextKey);
+  window.addEventListener("keydown", handlePrevKey);
 }
 
 function onCloseModal() {
   ref.modalWindow.classList.remove("is-open");
 
   window.removeEventListener("keydown", onPressEsc);
-
-  window.removeEventListener("keydown", handleNextPrevKey);
+  window.removeEventListener("keydown", handleNextKey);
+  window.removeEventListener("keydown", handlePrevKey);
 
   deleteLargeImageSrc();
 }
@@ -109,12 +110,15 @@ function onPressEsc() {
   }
 }
 
-function handleNextPrevKey(event) {
+function handlePrevKey(event) {
   if (event.key === "ArrowLeft" && largeImageIndex > 1) {
     ref.largeImg.src = document.querySelector(
       `img[data-index = "${(largeImageIndex -= 1)}"]`
     ).dataset.source;
   }
+}
+
+function handleNextKey(event) {
   if (
     event.key === "ArrowRight" &&
     largeImageIndex < ref.imgGallery.childElementCount
@@ -124,6 +128,7 @@ function handleNextPrevKey(event) {
     ).dataset.source;
   }
 }
+
 function handleNextClick() {
   if (largeImageIndex < ref.imgGallery.childElementCount) {
     ref.largeImg.src = document.querySelector(
@@ -131,6 +136,7 @@ function handleNextClick() {
     ).dataset.source;
   }
 }
+
 function handlePrevClick() {
   if (largeImageIndex > 1) {
     ref.largeImg.src = document.querySelector(
