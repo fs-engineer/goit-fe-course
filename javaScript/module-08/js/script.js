@@ -12,6 +12,8 @@ const ref = {
   backDrop: document.querySelector(".lightbox__content"),
   prevBtn: document.querySelector(".prev-btn"),
   nextBtn: document.querySelector(".next-btn"),
+  // buttonHoverPrev: document.getElementById("prev-btn"),
+  // buttonHoverNext: document.getElementById("next-btn"),
 };
 let largeImageIndex;
 
@@ -22,6 +24,10 @@ ref.imgGallery.addEventListener("click", onClickGallery);
 ref.backDrop.addEventListener("click", onClickBackDrop);
 ref.nextBtn.addEventListener("click", handleNextClick);
 ref.prevBtn.addEventListener("click", handlePrevClick);
+// ref.buttonHoverPrev.addEventListener("mouseover", onOverMouse);
+// ref.buttonHoverPrev.addEventListener("mouseout", onOutMouse);
+// ref.buttonHoverNext.addEventListener("mouseover", onOverMouse);
+// ref.buttonHoverNext.addEventListener("mouseout", onOutMouse);
 
 function createGallery() {
   let index = 0;
@@ -144,3 +150,13 @@ function handlePrevClick() {
     ).dataset.source;
   }
 }
+
+// function onOverMouse() {
+//   ref.prevBtn.classList.add("btn-prev--opacity");
+//   ref.nextBtn.classList.add("btn-prev--opacity");
+// }
+
+// function onOutMouse() {
+//   ref.prevBtn.classList.remove("btn-prev--opacity");
+//   ref.nextBtn.classList.remove("btn-prev--opacity");
+// }

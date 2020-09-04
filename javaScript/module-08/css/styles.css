@@ -106,10 +106,23 @@ body {
   width: 30px;
   height: 30px;
   background-image: url(../images/left-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #fff;
   border-radius: 50%;
   border: 5px solid #fff;
   cursor: pointer;
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.btn--hover {
+  position: relative;
+  background-color: #fff;
+  padding: 100% 200px 100% 200px;
+  opacity: 0;
+  z-index: 20;
+  border: 5px solid white;
 }
 
 .next-btn {
@@ -124,6 +137,12 @@ body {
   border-radius: 50%;
   border: 5px solid #fff;
   cursor: pointer;
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.btn-prev--opacity {
+  opacity: 1;
 }
 
 .lightbox__image {
