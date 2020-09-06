@@ -24,7 +24,9 @@
 
 - [x] [module 08](https://google-barma.github.io/goit-fe-course/javaScript/module-08/)
 
-- [ ] [module 09] в процессе...
+- [x] [module 10](https://google-barma.github.io/hw-js-10-food-shop/)
+
+- [ ] [module 11] в процессе...
 
 # HTML/CSS HomeWork
 
