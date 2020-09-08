@@ -28,6 +28,8 @@
 
 - [x] [module 11 countdownTimer](https://google-barma.github.io/hw-js-11-countdown-timer/)
 
+- [x] [module 11 colorSwitch](https://google-barma.github.io/hw-js-11-color-switch/)
+
 - [ ] [module 12] в процессе...
 
 # HTML/CSS HomeWork
