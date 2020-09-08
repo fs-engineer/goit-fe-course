@@ -26,7 +26,7 @@
 
 - [x] [module 10](https://google-barma.github.io/hw-js-10-food-shop/)
 
-- [x] [module 11](https://google-barma.github.io/hw-js-11-countdown-timer/)
+- [x] [module 11 countdownTimer](https://google-barma.github.io/hw-js-11-countdown-timer/)
 
 - [ ] [module 12] в процессе...
 
