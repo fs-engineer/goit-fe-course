@@ -30,6 +30,8 @@
 
 - [x] [module 11 colorSwitch](https://google-barma.github.io/hw-js-11-color-switch/)
 
+- [x] [module 11 promisification](https://google-barma.github.io/hw-js-11-color-promisification/)
+
 - [ ] [module 12] в процессе...
 
 # HTML/CSS HomeWork
