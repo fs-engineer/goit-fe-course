@@ -8,12 +8,11 @@ let counterValue = 0;
 decrementRef.addEventListener('click', decrement);
 incrementRef.addEventListener('click', increment);
 
-const showCounterValue = () => (valueRef.textContent = counterValue);
 function decrement() {
   counterValue -= 1;
-  showCounterValue();
+  valueRef.textContent = counterValue;
 }
 function increment() {
   counterValue += 1;
-  showCounterValue();
+  valueRef.textContent = counterValue;
 }
