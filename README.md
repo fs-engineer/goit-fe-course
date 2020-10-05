@@ -32,7 +32,11 @@
 
 - [x] [module 11 promisification](https://google-barma.github.io/hw-js-11-promisification/)
 
-- [ ] [module 12] в процессе...
+- [x] [module 12 countries](https://google-barma.github.io/hw-js-12-countries/)
+
+- [x] [module 13 image-finder](https://google-barma.github.io/hw-js-13-image-finder/)
+
+- [ ] [module 14] в процессе...
 
 # HTML/CSS HomeWork
 
