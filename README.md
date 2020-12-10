@@ -6,6 +6,18 @@
 <br>
 <br>
 
+# HTML/CSS HomeWork
+
+- [x] [module 01](https://google-barma.github.io/react-hw-01-components/)
+
+- [x] [module 02 phone-book](https://google-barma.github.io/react-hw-02-phonebook/)
+
+- [x] [module 02 feedback](https://github.com/Google-Barma/react-hw-02-feedback)
+
+- [x] [module 03 phone-book](https://google-barma.github.io/react-hw-02-phonebook/)
+
+- [x] [module 03 image-finder](https://google-barma.github.io/react-hw-03-image-finder/)
+
 # JavaScript HomeWork
 
 - [x] [module 01](https://google-barma.github.io/goit-fe-course/javaScript/module-01/)
@@ -36,7 +48,7 @@
 
 - [x] [module 13 image-finder](https://google-barma.github.io/hw-js-13-image-finder/)
 
-- [ ] [module 14] в процессе...
+- [x] [module 14] Done...
 
 # HTML/CSS HomeWork
 
