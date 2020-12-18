@@ -18,6 +18,12 @@
 
 - [x] [module 03 image-finder](https://google-barma.github.io/react-hw-03-image-finder/)
 
+- [x] [module 04 feedback (hooks)](https://google-barma.github.io/react-hw-04-feedback/)
+
+- [x] [module 04 phonebook (hooks)](https://google-barma.github.io/react-hw-04-phonebook/)
+
+- [x] [module 04 image-finder (hooks)](https://google-barma.github.io/react-hw-04-image-finder/)
+
 # JavaScript HomeWork
 
 - [x] [module 01](https://google-barma.github.io/goit-fe-course/javaScript/module-01/)
@@ -48,7 +54,7 @@
 
 - [x] [module 13 image-finder](https://google-barma.github.io/hw-js-13-image-finder/)
 
-- [x] [module 14] Done...
+- [x] [module 14] (Done...)
 
 # HTML/CSS HomeWork
 
