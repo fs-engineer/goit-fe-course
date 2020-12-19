@@ -24,7 +24,7 @@
 
 - [x] [module 04 image-finder (hooks)](https://google-barma.github.io/react-hw-04-image-finder/)
 
-- [] [module 05] in progress...
+- [ ] [module 05] in progress...
 
 # JavaScript HomeWork
 
