@@ -26,7 +26,7 @@
 
 - [x] [module 05](https://gb-movies-finder.netlify.app/)
 
-- [ ][module 06] ...in progress
+- [ ] [module 06] ...in progress
 
 # JavaScript HomeWork
 
