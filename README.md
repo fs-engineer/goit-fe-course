@@ -26,7 +26,9 @@
 
 - [x] [module 05](https://gb-movies-finder.netlify.app/)
 
-- [ ] [module 06] ...in progress
+- [x] [module 06 phonebook (redux)](https://google-barma.github.io/react-redux-hw-06-phone-book/)
+
+-[ ] [module 7] ...in progress
 
 # JavaScript HomeWork
 
