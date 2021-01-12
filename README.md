@@ -28,7 +28,7 @@
 
 - [x] [module 06 phonebook (redux)](https://google-barma.github.io/react-redux-hw-06-phone-book/)
 
--[ ] [module 7] ...in progress
+- [ ] [module 7] ...in progress
 
 # JavaScript HomeWork
 
